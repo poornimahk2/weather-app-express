@@ -3,6 +3,7 @@ const app = new express();
 const request = require('request');
 const moment = require('moment')
 
+log= console.log
 
 app.use(express.static(__dirname+ '/public'))
 app.use(express.json());
@@ -28,7 +29,7 @@ app.get('/:cityname', (req,res)=>
         
     request(url,(error, _response,body)=>{
         const weather_json =JSON.parse(body);
-        console.log(weather_json);
+        log(weather_json);
         
         if(weather_json.cod ==='404')
         {
@@ -50,4 +51,4 @@ app.get('/:cityname', (req,res)=>
     });
 });
 
-app.listen(8000,()=> console.log('listening at port 8000'));
+app.listen(8000,()=> log('listening at port 8000'));
