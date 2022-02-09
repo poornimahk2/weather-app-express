@@ -70,8 +70,8 @@ main {
 
 .location .city {
   color: #FFF;
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: bolder;
   margin-bottom: 5px;
 }
 
