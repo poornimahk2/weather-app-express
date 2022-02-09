@@ -1,0 +1,53 @@
+#an example of json file for the weather of Mumbai city ,using the given api key
+{
+
+"coord": {
+"lon": 72.8479,
+"lat": 19.0144
+},
+
+
+"weather": [
+
+{
+"id": 711,
+"main": "Smoke",
+"description": "smoke",
+"icon": "50d"
+}
+],
+"base": "stations",
+
+"main": {
+"temp": 299.14,
+"feels_like": 299.14,
+"temp_min": 298.09,
+"temp_max": 299.14,
+"pressure": 1015,
+"humidity": 57
+},
+"visibility": 3000,
+
+"wind": {
+"speed": 1.54,
+"deg": 310
+},
+
+"clouds": {
+"all": 40
+},
+"dt": 1644387540,
+
+"sys": {
+"type": 1,
+"id": 9052,
+"country": "IN",
+"sunrise": 1644370803,
+"sunset": 1644411941
+},
+"timezone": 19800,
+"id": 1275339,
+"name": "Mumbai",
+"cod": 200
+}
+
