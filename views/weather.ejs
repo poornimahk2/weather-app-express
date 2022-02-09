@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="icon" href="http://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/weather-icon.png">
+  <link rel="stylesheet" href="./css/weather.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <main>
+        <div class="wrap-container">
+      <section class="location">
+        <div class="city"><%=weather.city.toUpperCase() %> </div>
+        <div class="date"><%= moment().format('LLLL')  %></div>
+      </section>
+      <div class="current">
+        <div class="temp"><%=weather.temperature %><span>°c</span></div>
+        <img src="http://openweathermap.org/img/w/<%=weather.icon%>.png" alt="Image" height="70" width="70"> <br>
+        <div class="weather"><%= weather.description %> </div>
+        <div class="hi-low"><%= weather.temp_min %> °c / <%= weather.temp_max %> °c</div>
+      </div>
+    </div>
+    </main>
+  </div>
+</body>
+</html>

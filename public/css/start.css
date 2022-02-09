@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/000/274/527/large_2x/night-view-ocean-vector-background-illustration.jpg');
+    background-size: cover;
+    background-position: top center;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6));
+  }
+
+.wrap-container{
+    margin-top: 100px;
+    background-color:rgba(37, 36, 36, 0.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:30%;
+    transform:translate(-50%, -50%);
+}
+
+p{
+    color: #FFF;
+  font-size: 32px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
